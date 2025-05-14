@@ -34,8 +34,7 @@
 
 ## 1. Introduction
 
-**RailSecure** is an interactive web application designed to showcase how a modern security-awareness programme could be delivered inside a rail operator such as Iarnród Éireann.  
-Using **Streamlit** for rapid UI development and **OpenAI GPT-4o** for dynamic content, the platform demonstrates practical learning modules covering phishing, password hygiene, incident response, regulatory compliance and more.
+**RailSecure** is an interactive web application designed to showcase how a modern security-awareness programme could be delivered inside a rail operator such as Iarnród Éireann. Using **Streamlit** for rapid UI development and **OpenAI GPT-4o** for dynamic content, the platform demonstrates practical learning modules covering phishing, password hygiene, incident response, regulatory compliance and more.
 
 ---
 
@@ -126,7 +125,7 @@ Session state ensures a seamless multi-page experience.
 | File | Role |
 |------|------|
 | **`streamlit_app.py`** | Sets page config, calls `utils.helpers.init_session_state()`, provides sidebar navigation and lazy-loads each module’s `display_*` function. |
-| **`requirements.txt`** | Lightweight dependency list (<20 MB footprint). |
+| **`requirements.txt`** | Lightweight dependency list. |
 | **`utils/helpers.py`** | • OpenAI & NVD key retrieval<br>• CSS background injector<br>• Session-state defaults<br>• `create_llm_messages()` helper. |
 | **`modules/*.py`** | Self-contained pages; each exports a single `display_*()` that builds all Streamlit widgets and (if needed) calls OpenAI. |
 | **`assets/`** | Static imagery (brand consistency & UX). |
@@ -147,7 +146,7 @@ Session state ensures a seamless multi-page experience.
    NVD_API_KEY    = "your-nvd-key"
 
 
-5. Deploy – build completes in \~2-3 min. First cold-start \~10 s.
+5. Deploy.
 
 ### 6.2 Local / Offline Run
 
@@ -158,7 +157,10 @@ cd railsecure
 
 # 2 (Recommended) Create virtual-env
 python -m venv .venv
-source .venv/bin/activate       # Windows: .venv\Scripts\activate
+# Linux / Others
+source .venv/bin/activate
+# Windows:
+.venv\Scripts\activate
 
 # 3 Install deps
 pip install -r requirements.txt
@@ -175,7 +177,6 @@ streamlit run streamlit_app.py
 ```
 
 Navigate to [http://localhost:8501](http://localhost:8501).
-If the OpenAI key is missing the AI-powered tabs degrade gracefully to static content.
 
 ---
 
@@ -183,17 +184,17 @@ If the OpenAI key is missing the AI-powered tabs degrade gracefully to static co
 
 * **No Auth / RBAC** – anyone with the URL can access; production would need SSO or IAM.
 * **Security Hardening** – headers, CSP, rate-limit, input sanitisation not yet audited.
-* **Persistence** – all user state lives in browser session; consider SQLite or Postgres.
+* **Persistence** – all user state lives in browser session; could consider SQLite or Postgres.
 * **Automated Testing** – manual QA only; adding `pytest` + Streamlit’s test client would raise quality.
 * **LMS Integration** – SCORM/xAPI export or REST hooks could allow HR tracking.
 * **Internationalisation** – English-only; potential LLM translation.
-  Pull requests & issues welcome!
 
 ---
 
 ## 8. Licence
 
 Released under the **MIT License** – see `LICENSE` or [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT).
+
 In short: do anything you like, but give credit and don’t sue the author if it breaks.
 
 ---
