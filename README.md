@@ -2,74 +2,73 @@
   <img src="./assets/logo.png" alt="RailSecure Platform Logo" width="170px">
   <h1>RailSecure Learning Platform</h1>
   <p><strong>An Interactive Cyber-Security Awareness & Training Tool</strong></p>
-  <p><em>Developed as part of a Cyber-Security Graduate interview with Iarnród Éireann (Irish Rail)</em></p>
+  <p><em>Developed for a Cyber-Security Graduate interview with Iarnród Éireann (Irish Rail)</em></p>
   <hr/>
 </div>
 
-> **⚠️ Disclaimer**  
-> RailSecure was created as a **proof-of-concept portfolio project** for an interview task.  
-> It has **not** passed penetration testing or production hardening; use at your own risk.  
-> The code is released under the MIT Licence so you may adapt it freely, but please audit thoroughly before any live deployment.
+> **⚠️  Disclaimer**  
+> RailSecure is a **proof-of-concept portfolio project**, created to accompany an interview presentation.  
+> It has **not** undergone production-grade penetration testing or code review; deploy at your own risk.  
+> Code is released under the **MIT Licence** – feel free to fork, but audit first.
 
 ---
 
 ## Table of Contents
 
-1. [Introduction](#1-introduction)
-2. [Project Genesis & Objectives](#2-project-genesis--objectives)
-3. [Key Features](#3-key-features)
-4. [Technology Stack](#4-technology-stack)
-5. [Architecture & Code Layout](#5-architecture--code-layout)
-   * [5.1 Directory Tree](#51-directory-tree)
-   * [5.2 Core File Descriptions](#52-core-file-descriptions)
-6. [Getting Started & Deployment](#6-getting-started--deployment)
-   * [6.1 Online Deployment (Streamlit Cloud)](#61-online-deployment-streamlit-cloud)
-   * [6.2 Local / Offline Run](#62-local--offline-run)
-7. [Limitations & Future Work](#7-limitations--future-work)
-8. [Licence](#8-licence)
-9. [Developer’s Note](#9-developers-note)
-10. [Live Demo](#10-live-demo)
+1. [Introduction](#1-introduction)  
+2. [Project Genesis & Objectives](#2-project-genesis--objectives)  
+3. [Key Features](#3-key-features)  
+4. [Technology Stack](#4-technology-stack)  
+5. [Architecture & Code Layout](#5-architecture--code-layout)  
+6. [Getting Started & Deployment](#6-getting-started--deployment)  
+7. [Limitations & Future Work](#7-limitations--future-work)  
+8. [Licence](#8-licence)  
+9. [Developer’s Note](#9-developers-note)  
+10. [Live Demo](#10-live-demo)  
 
 ---
 
 ## 1. Introduction
 
-**RailSecure** is an interactive web application designed to showcase how a modern security-awareness programme could be delivered inside a rail operator such as Iarnród Éireann. Using **Streamlit** for rapid UI development and **OpenAI GPT-4o** for dynamic content, the platform demonstrates practical learning modules covering phishing, password hygiene, incident response, regulatory compliance and more.
+**RailSecure** is an interactive Streamlit application that demonstrates how a modern, regulation-aware security-awareness programme might look inside a rail operator such as Iarnród Éireann.  
+It complements – rather than replaces – the traditional slide-deck presented during the interview by providing **hands-on modules** covering phishing, password hygiene, incident response, compliance, and more.  
+All dynamic content (quizzes, scenarios, feedback) is generated in real time with **OpenAI GPT-4o**.
 
 ---
 
 ## 2. Project Genesis & Objectives
 
-The interview brief asked candidates to present on:
+The interview brief:
 
-> *“Cyber-security regulations that Irish Rail must abide by, tools that aid compliance, and how to set up a security-awareness programme.”*
+> *“Explain the cyber-security regulations Irish Rail must abide by, the tools aiding compliance, and how to set up a security-awareness programme.”*
 
-Rather than deliver a static slide-deck, I built RailSecure to:
+RailSecure was built **to augment my slides** and to:
 
-* **💡 Demonstrate innovation** – show an engaging, hands-on learning environment.
-* **🛠️ Provide practical tooling** – quizzes, phishing drills, CVE feeds, incident simulations.
-* **📜 Embed compliance context** – NIS2, GDPR, CER Directive, ISO 27001, IEC 62443.
-* **🤖 Leverage AI** – generate fresh scenarios, evaluate answers, power live Q&A.
-* **🛡️ Promote security culture** – illustrate how every employee becomes a defence layer.
+* **💡 Show innovation** – move beyond theory into an engaging, self-service learning portal.  
+* **🛠️ Offer practical tooling** – quizzes, phishing drills, CVE feeds, incident simulations.  
+* **📜 Embed compliance context** – NIS2, GDPR, CER Directive, ISO 27001, IEC 62443.  
+* **🤖 Leverage AI** – generate bespoke scenarios, auto-mark answers, run live Q&A.  
+* **🔐 Demonstrate prompt-engineering controls** – system prompts constrain scope and mitigate jailbreak attempts.  
+* **🛡️ Foster security culture** – illustrate how everyone becomes part of the defence-in-depth strategy.
 
 ---
 
 ## 3. Key Features
 
-| Module | Purpose |
-|--------|---------|
+| Module | Description |
+|--------|-------------|
 | **Home** | Welcome, feature overview, Dublin-localised time & version. |
-| **Phishing Awareness** | AI-generated phishing emails · User explains red flags · AI feedback · “Paste-your-own” email analyser. |
-| **Password Tools** | Secure password generator · `zxcvbn` strength checker · best-practice tips. |
-| **Incident Scenario Simulation** | GPT-crafted OT/IT incident narrative · user submits response strategy · AI critique. |
-| **Incident Response Guides** | Generic 6-phase framework · AI-generated scenario-specific guides inc. NIS2/GDPR timelines. |
-| **Compliance Hub** | Expanders on SIEM/SOAR/GRC, IAM, OT security · blueprint for awareness programme · live compliance Q&A. |
-| **Cyber-Security Quiz** | GPT-generated MCQs · instant scoring · explanations. |
-| **CVE Explainer** | Pulls latest 30-day CVEs from NVD · shows CVSS v3.1 severity. |
-| **Reference Library** | Curated links to directives & standards · AI Q&A. |
-| **Why Awareness Matters** | Case-study gallery of real-world transport cyber incidents. |
+| **Phishing Awareness** | GPT-generated phishing emails, user red-flag analysis with AI feedback, plus “paste-your-own” email inspector. |
+| **Password Tools** | Secure password generator, `zxcvbn` strength checker, best-practice tips. |
+| **Incident Scenario Simulation** | GPT-crafted IT/OT incident narrative, user response strategy, AI critique. |
+| **Incident Response Guides** | Six-phase generic framework + AI-generated scenario-specific guides (NIS2/GDPR timelines). |
+| **Compliance Hub** | Expanders on SIEM/SOAR/GRC, IAM, OT monitoring; blueprint for awareness programme; live compliance Q&A. |
+| **Cyber-Security Quiz** | GPT-generated MCQs, instant scoring, detailed explanations. |
+| **CVE Explainer** | Latest 30-day CVEs pulled from NVD, CVSS v3.1 severity display. |
+| **Reference Library** | Curated links to directives & standards, AI explain-it-to-me bot. |
+| **Why Awareness Matters** | Gallery of real transport cyber incidents for context. |
 
-Session state ensures a seamless multi-page experience.
+All state is managed in `st.session_state` for seamless navigation.
 
 ---
 
@@ -77,23 +76,22 @@ Session state ensures a seamless multi-page experience.
 
 | Layer | Tech | Notes |
 |-------|------|-------|
-| **Front-end / UI** | [Streamlit 1.x](https://streamlit.io) | Custom CSS (dark theme, hero background). |
-| **Backend / Language** | Python 3.9+ | Typed where helpful; no external DB required. |
-| **AI / LLM** | [OpenAI Python SDK](https://github.com/openai/openai-python) | GPT-4o with tuned temperature per task. |
+| **UI** | [Streamlit 1.x](https://streamlit.io) | Custom CSS for dark theme & hero background. |
+| **Language** | Python 3.9+ | No external DB required. |
+| **LLM** | [OpenAI Python SDK](https://github.com/openai/openai-python) | GPT-4o; temperature tuned per task. |
 | **Password Analysis** | [`zxcvbn`](https://github.com/dropbox/zxcvbn) | Crack-time estimation & feedback. |
-| **External Data** | NVD CVE API v2 (via `requests`) | Live vulnerability feed. |
-| **Assets** | Local images (logo, favicon, background) | No external CDN. |
-| **Deployment** | Streamlit Community Cloud | Free tier; secrets stored server-side. |
+| **External Data** | NVD CVE API v2 (`requests`) | Live vulnerability feed. |
+| **Assets** | Local images for logo/favicon/background. |
+| **Deployment** | Streamlit Community Cloud | Free tier; secrets stored per-project. |
 
 ---
 
 ## 5. Architecture & Code Layout
 
 ### 5.1 Directory Tree
-```
-
+```text
 .
-├── streamlit\_app.py        # Main router & sidebar
+├── streamlit_app.py         # Entry-point & sidebar router
 ├── requirements.txt
 │
 ├── assets/
@@ -102,22 +100,21 @@ Session state ensures a seamless multi-page experience.
 │   └── logo.png
 │
 ├── utils/
-│   ├── helpers.py          # OpenAI client, CSS injection, session init, LLM helpers
-│   └── **init**.py
+│   ├── helpers.py           # OpenAI client, CSS injector, session init, LLM helpers
+│   └── __init__.py
 │
-└── modules/                # One file per feature
-├── compliance\_module.py
-├── cve\_explainer\_module.py
-├── cybersecurity\_quiz\_module.py
-├── home\_module.py
-├── incident\_response\_module.py
-├── password\_module.py
-├── phishing\_module.py
-├── reference\_module.py
-├── scenario\_quiz\_module.py
-├── security\_awareness\_importance\_module.py
-└── **init**.py
-
+└── modules/                 # One file per feature page
+    ├── compliance_module.py
+    ├── cve_explainer_module.py
+    ├── cybersecurity_quiz_module.py
+    ├── home_module.py
+    ├── incident_response_module.py
+    ├── password_module.py
+    ├── phishing_module.py
+    ├── reference_module.py
+    ├── scenario_quiz_module.py
+    ├── security_awareness_importance_module.py
+    └── __init__.py
 ````
 
 ### 5.2 Core File Descriptions
@@ -201,13 +198,15 @@ In short: do anything you like, but give credit and don’t sue the author if it
 
 ## 9. Developer’s Note
 
-Building RailSecure pushed me to blend **pedagogy**, **regulatory knowledge**, and **code craftsmanship** into a single deliverable under interview time-pressure.
-The project reaffirmed that **hands-on, scenario-based learning** resonates far more than theory alone. I hope it also demonstrates my ability to turn vague requirements into a polished, user-friendly product.
+Creating RailSecure required blending **pedagogy**, **regulatory insight** and **code craftsmanship** under tight interview timelines.
+Prompt-engineering guardrails were a key focus: every GPT call uses explicit system prompts, strict output formats and out-of-scope refusals to reduce jailbreak risk.
+I hope the project shows how interactive tools can elevate a standard presentation – and that it sparks ideas for your own awareness programmes.
 
-Feel free to explore, fork, and improve – and let me know if it helps your own security-awareness journey!
+Feel free to explore, fork and improve!
 
 ---
 
 ## 10. Live Demo
 
-👉 **Explore the running app here:** [https://railsecure.streamlit.app](https://railsecure.streamlit.app)  🎉
+**▶️ Try the app:** [https://railsecure.streamlit.app](https://railsecure.streamlit.app) 🎉
+
