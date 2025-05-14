@@ -1,0 +1,11 @@
+# Core library for OpenAI API interaction
+openai
+
+# Standard library for making HTTP requests (e.g., to NVD API)
+requests
+
+# Streamlit itself depends on Pillow, so it's implicitly available if Pillow is used directly.
+Pillow 
+
+# Library for realistic password strength estimation
+zxcvbn
