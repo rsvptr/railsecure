@@ -26,56 +26,56 @@ def _display_key_reference_links():
             {
                 "title": "NIS2 Directive Overview (Official EU Site)", 
                 "url": "https://digital-strategy.ec.europa.eu/en/policies/nis2-directive",
-                "desc": "The primary EU legislation on cybersecurity for essential and important entities."
+                "desc": "- The primary EU legislation on cybersecurity for essential and important entities."
             },
             {
                 "title": "Critical Entities Resilience (CER) Directive",
                 "url": "https://www.consilium.europa.eu/en/press/press-releases/2022/12/08/eu-resilience-council-adopts-a-directive-to-strengthen-the-resilience-of-critical-entities/",
-                "desc": "Complements NIS2 by focusing on the physical resilience of critical entities."
+                "desc": "- Complements NIS2 by focusing on the physical resilience of critical entities."
             },
             {
                 "title": "What is GDPR? (Official EU GDPR Portal)", 
                 "url": "https://gdpr.eu/what-is-gdpr/",
-                "desc": "Comprehensive information on the General Data Protection Regulation."
+                "desc": " - Comprehensive information on the General Data Protection Regulation."
             },
             {
                 "title": "ENISA (EU Agency for Cybersecurity) - Transport Sector Reports",
                 "url": "https://www.enisa.europa.eu/topics/cybersecurity-of-critical-sectors/transport",
-                "desc": "Specific guidance and reports for the transport sector from ENISA."
+                "desc": "- Specific guidance and reports for the transport sector from ENISA."
             }
         ],
         "Irish Legislation & Guidance": [
             {
                 "title": "NCSC Ireland - NIS2 Guide", 
                 "url": "https://www.ncsc.gov.ie/pdfs/NCSC_NIS2_Guide.pdf", # User should verify link currency
-                "desc": "Guidance from Ireland's National Cyber Security Centre on NIS2."
+                "desc": "- Guidance from Ireland's National Cyber Security Centre on NIS2."
             },
             {
                 "title": "Irish Data Protection Act 2018 (Official Legislation)", 
                 "url": "https://www.irishstatutebook.ie/eli/2018/act/7/enacted/en/html",
-                "desc": "The Irish law that incorporates and further specifies aspects of GDPR."
+                "desc": "- The Irish law that incorporates and further specifies aspects of GDPR."
             },
             {
                 "title": "Data Protection Commission (DPC) Ireland - GDPR Obligations", 
                 "url": "https://www.dataprotection.ie/en/organisations/know-your-obligations",
-                "desc": "Guidance and resources from Ireland's data protection authority."
+                "desc": "- Guidance and resources from Ireland's data protection authority."
             }
         ],
         "Industry Standards & Best Practices": [
             {
                 "title": "ISO/IEC 27001 - Information Security Management", 
                 "url": "https://www.iso.org/isoiec-27001-information-security.html",
-                "desc": "International standard for information security management systems (ISMS)."
+                "desc": "- International standard for information security management systems (ISMS)."
             },
             {
                 "title": "IEC 62443 - Security for Industrial Automation and Control Systems", 
                 "url": "https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards",
-                "desc": "Key series of standards for Operational Technology (OT) cybersecurity, highly relevant for rail."
+                "desc": "- Key series of standards for Operational Technology (OT) cybersecurity, highly relevant for rail."
             },
              {
                 "title": "NIST Cybersecurity Framework",
                 "url": "https://www.nist.gov/cyberframework",
-                "desc": "A popular framework for improving critical infrastructure cybersecurity."
+                "desc": "- A popular framework for improving critical infrastructure cybersecurity."
             }
         ]
     }
