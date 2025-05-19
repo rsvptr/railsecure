@@ -30,7 +30,7 @@ def _display_key_reference_links():
             },
             {
                 "title": "Critical Entities Resilience (CER) Directive",
-                "url": "https://www.consilium.europa.eu/en/press/press-releases/2022/12/08/council-adopts-new-rules-to-enhance-the-resilience-of-critical-entities/",
+                "url": "https://www.consilium.europa.eu/en/press/press-releases/2022/12/08/eu-resilience-council-adopts-a-directive-to-strengthen-the-resilience-of-critical-entities/",
                 "desc": "Complements NIS2 by focusing on the physical resilience of critical entities."
             },
             {
@@ -40,7 +40,7 @@ def _display_key_reference_links():
             },
             {
                 "title": "ENISA (EU Agency for Cybersecurity) - Transport Sector Reports",
-                "url": "https://www.enisa.europa.eu/topics/critical-information-infrastructures-and-services/nis-directive/sectoral-information/transport",
+                "url": "https://www.enisa.europa.eu/topics/cybersecurity-of-critical-sectors/transport",
                 "desc": "Specific guidance and reports for the transport sector from ENISA."
             }
         ],
@@ -56,8 +56,8 @@ def _display_key_reference_links():
                 "desc": "The Irish law that incorporates and further specifies aspects of GDPR."
             },
             {
-                "title": "Data Protection Commission (DPC) Ireland - GDPR Overview", 
-                "url": "https://www.dataprotection.ie/en/organisations/know-your-obligations/what-gdpr",
+                "title": "Data Protection Commission (DPC) Ireland - GDPR Obligations", 
+                "url": "https://www.dataprotection.ie/en/organisations/know-your-obligations",
                 "desc": "Guidance and resources from Ireland's data protection authority."
             }
         ],
