@@ -198,7 +198,7 @@ In short: do anything you like, but give credit and don’t sue the author if it
 
 ## 9. Concluding Remarks
 
-Creating RailSecure required blending pedagogy, regulatory insight and code craftsmanship under tight interview timelines.
+Creating RailSecure required blending **pedagogy**, **regulatory insight** and **code craftsmanship** under tight interview timelines.
 Prompt-engineering guardrails were a key focus: every GPT call uses explicit system prompts, strict output formats and out-of-scope refusals to reduce jailbreak risk.
 The accompanying presentation for this is available in the repository.
 I hope the project shows how interactive tools can elevate a standard presentation – and that it sparks ideas for your own awareness programmes.
