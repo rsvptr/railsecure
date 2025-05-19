@@ -36,7 +36,7 @@ def _display_key_reference_links():
             {
                 "title": "What is GDPR? (Official EU GDPR Portal)", 
                 "url": "https://gdpr.eu/what-is-gdpr/",
-                "desc": " - Comprehensive information on the General Data Protection Regulation."
+                "desc": "- Comprehensive information on the General Data Protection Regulation."
             },
             {
                 "title": "ENISA (EU Agency for Cybersecurity) - Transport Sector Reports",
