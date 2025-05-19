@@ -23,7 +23,7 @@
 6. [Getting Started & Deployment](#6-getting-started--deployment)  
 7. [Limitations & Future Work](#7-limitations--future-work)  
 8. [Licence](#8-licence)  
-9. [Developer’s Note](#9-developers-note)  
+9. [Concluding Remarks](#9-concluding-remarks)  
 10. [Live Demo](#10-live-demo)  
 
 ---
@@ -196,10 +196,11 @@ In short: do anything you like, but give credit and don’t sue the author if it
 
 ---
 
-## 9. Developer’s Note
+## 9. Concluding Remarks
 
-Creating RailSecure required blending **pedagogy**, **regulatory insight** and **code craftsmanship** under tight interview timelines.
+Creating RailSecure required blending pedagogy, regulatory insight and code craftsmanship under tight interview timelines.
 Prompt-engineering guardrails were a key focus: every GPT call uses explicit system prompts, strict output formats and out-of-scope refusals to reduce jailbreak risk.
+The accompanying presentation for this is available in the repository.
 I hope the project shows how interactive tools can elevate a standard presentation – and that it sparks ideas for your own awareness programmes.
 
 Feel free to explore, fork and improve!
