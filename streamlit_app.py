@@ -42,7 +42,7 @@ except Exception as e:
     icon_image = "🛡️" # Fallback emoji icon on other errors
 
 st.set_page_config(
-    page_title="RailSecure Learning Platform", # Title displayed in the browser tab
+    page_title="RailSecure", # Title displayed in the browser tab
     page_icon=icon_image,                     # Icon displayed in the browser tab (favicon)
     layout="centered",                        # Page layout: "centered" or "wide"
     initial_sidebar_state="expanded"          # How the sidebar initially appears: "auto", "expanded", "collapsed"
@@ -79,7 +79,7 @@ def main():
         st.error(f"Error loading logo: {e}")
     
     # Display the main application title using Markdown for custom styling (margin control)
-    st.markdown("<h1 style='margin-top: -0.7em; margin-bottom: 0.5em;'>RailSecure Learning Platform</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='margin-top: -0.7em; margin-bottom: 0.5em;'>RailSecure: An AI-based Learning Platform</h1>", unsafe_allow_html=True)
 
     # --- Sidebar Menu for Navigation ---
     # Define the list of available training modules
